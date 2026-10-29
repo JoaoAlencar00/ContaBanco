@@ -1,18 +1,23 @@
-## Getting Started
+# Código-fonte — Conta bancária pelo terminal
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esta pasta contém o exercício `ContaTerminal`, que lê nome do cliente, agência, número da conta e saldo e imprime uma mensagem no console.
 
-## Folder Structure
+Consulte o [README principal](../README.md) para a apresentação e o escopo do projeto.
 
-The workspace contains two folders by default, where:
+## Executar a partir desta pasta
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Com um JDK instalado e `javac` e `java` disponíveis:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```sh
+mkdir build
+javac -encoding UTF-8 -d build src/ContaTerminal.java
+java -cp build ContaTerminal
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Organização
 
-## Dependency Management
+- `src/`: código-fonte Java.
+- `.vscode/settings.json`: configuração do projeto para VS Code.
+- `build/`: saída da compilação sugerida acima, criada localmente.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A extensão Java do VS Code também permite executar a classe pelo editor. Veja a [documentação de gerenciamento de dependências da extensão](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
